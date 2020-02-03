@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    max-width: 1920px;
+    height: 118px;
+    background: url(Logo.jpg) no-repeat 15% 50% #43b1d2;
+    position: fixed;
+    top: 0;
+}
+
+.header-container {
+    width: 1440px;
+    height: 66px;
+    position: relative;
+    margin: 31px 240px 21px 240px;
+}
+
+button {
+    border: none;
+    background-color: #43b1d2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    margin: 5px 23px 47px 1260px;
+    cursor: pointer;
+}
+
+button::before {
+    content: '\2706';
+}
+
+.main-menu {
+    list-style: none;
+    position: absolute;
+    margin: 47px 25px 0px 547px;
+}
+
+ul li {
+    display: inline;
+    margin: 7px;
+    padding: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: rgb(75, 45, 45);
+}
+
+ul li a:hover {
+    background: seashell;
+}
+
+.services {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.main-menu li:hover .submenu {
+    display: block;
+}
